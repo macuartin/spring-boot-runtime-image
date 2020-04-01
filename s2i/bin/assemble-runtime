@@ -1,0 +1,11 @@
+#!/bin/bash -e
+#
+# S2I assemble script for the 'spring-boot-builder' image.
+# The 'assemble' script builds your application source so that it is ready to run.
+#
+# For more information refer to the documentation:
+#	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
+#
+
+echo "---> Check if Artifacts is in runtime image"
+ls -laR

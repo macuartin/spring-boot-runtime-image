@@ -1,0 +1,10 @@
+#!/bin/bash -e
+#
+#     The run script executes the server that runs your application.
+#
+
+echo "---> Run application"
+chown root:root app.jar
+chmod +x app.jar
+export JAVA_OPTS='-XX:+UseG1GC -Xms512m -Xmx768m'
+java ${JAVA_OPTS} -jar app.jar
